@@ -7,25 +7,34 @@
         <title>add contact</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="add-styles.css">
+
     </head>
-    <body>
+    <body><div class="menu">
+        <button class="btn" id="homeLink" type="button">Home</button>
+        </div>
         <br/>
+        <div class="form">
         <form id="editForm">
-            <label for="firstname">First name</label>
+            <label for="firstname">First name</label><br/>
             <input type="text" name="firstname" id="firstname"><br/>
-            <label for="lastname">Last name</label>
+            <label for="lastname">Last name</label><br/>
             <input type="text" name="lastname" id="lastname"><br/>
-            <label for="mobile">Mobile</label>
+            <label for="mobile">Mobile</label><br/>
             <input type="text" name="mobile" id="mobile"><br/>
-            <label for="email">Email</label>
+            <label for="email">Email</label><br/>
             <input type="email" name="email" id="email"><br/>
-            <label for="avatar">Select a file</label>
+            <label for="avatar">Select a file</label><br/>
             <input type="file" name="avatar" id="avatar"><br/>
-            <button type="submit" id="submitForm">Submit</button>
+            <button type="submit" id="submitForm" class="btn">Submit</button>
         </form>
         <br/>
-        <button id="homeLink" type="button">Home</button>
+        </div>
 
         <script src="config.js" async defer></script>
 

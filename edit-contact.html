@@ -4,30 +4,40 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>edit-contact</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="edit-styles.css">
     </head>
     <body onload="getContact()">
+        <div class="menu">
+            <button class="btn" id="homeLink" type="button">Home</button>
+            <button class="btn" id="editContact" type="button">Edit</button>
+            <button class="btn" id="deleteContact" type="button">Delete</button>
+        </div>
+        <div class="content">
         <div id="avatarImage"></div>
         <form id="editForm">
-            <label for="firstname">First name</label>
+            <label for="firstname">First name</label><br/>
             <input type="text" name="firstname" id="firstname" readonly><br/>
-            <label for="lastname">Last name</label>
+            <label for="lastname">Last name</label><br/>
             <input type="text" name="lastname" id="lastname" readonly><br/>
-            <label for="mobile">Mobile</label>
+            <label for="mobile">Mobile</label><br/>
             <input type="text" name="mobile" id="mobile" readonly><br/>
-            <label for="email">Email</label>
+            <label for="email">Email</label><br/>
             <input type="email" name="email" id="email" readonly><br/>
             <label for="avatar" id="avatarLabel" hidden>Change profile image</label>
             <input type="file" name="avatar" id="avatar" hidden><br/>
-            <button type="submit" id="submitForm" hidden>Submit</button>
+            <button class="btn" type="submit" id="submitForm" hidden>Submit</button>
         </form>
         <br/><br/>
-           <button id="homeLink" type="button">Home</button>
-            <button id="editContact" type="button">Edit</button>
-            <button id="deleteContact" type="button">Delete</button>
+        </div>
+       
         
         <script src="config.js" async defer></script>
         <script>
