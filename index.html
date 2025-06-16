@@ -34,7 +34,7 @@
                 })
                 .then(function(data){
                     displayOutput(data);
-                    //console.log(data);
+                    console.log(data);
                 })
             }
 
@@ -44,10 +44,10 @@
                 for (a in data){
                    output += `
                     <tr onclick="editContact(${data[a].id})">
-                        <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width="40"</style/></td>  
-                        
-                        <td><h5>${data[a].firstname}</h5></td>
-                        <td><h5>${data[a].lastname}</h5></td>
+                        <td><img src="${rootPath}controller/uploads/${data[a].avatar}" width="80"</td>  
+                        <td><h4 style="margin: 2vh 25vh">${data[a].firstname}</h4></td>
+                        <td><h4 style="margin: 2vh 25vh">${data[a].lastname}</h4></td>
+                        <td><h4 style="margin-left: 25vh">${data[a].email}</h4></td>
                     </tr>
                    ` 
                 }
